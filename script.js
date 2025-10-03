@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Wig options with their image paths
     const wigs = {
-        wig1: 'assets/wig-long-straight.png',
-        wig2: 'assets/wig-curly.png',
-        wig3: 'assets/wig-bob.png',
-        wig4: 'assets/wig-wavy.png'
+        wig1: 'assets/starightwig-removebg-preview.png',
+        wig2: 'assets/curly_wig-removebg-preview.png',
+        wig3: 'assets/bog_wig-removebg-preview.png',
+        wig4: 'assets/wavy_wig-removebg-preview.png'
     };
 
     let currentWig = null;
