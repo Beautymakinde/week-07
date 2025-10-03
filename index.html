@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Wig Try-On</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Wig Try-On</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="selfie-upload" accept="image/*">
+            <label for="selfie-upload" class="upload-button">Upload Your Selfie</label>
+        </div>
+
+        <div class="try-on-section">
+            <div class="image-container">
+                <img id="selfie-display" src="#" alt="Your selfie will appear here" style="display: none;">
+                <div id="wig-overlay"></div>
+            </div>
+            
+            <div class="wig-selection">
+                <h2>Choose a Wig</h2>
+                <div class="wig-options">
+                    <button class="wig-button" data-wig="wig1">Long Straight</button>
+                    <button class="wig-button" data-wig="wig2">Curly</button>
+                    <button class="wig-button" data-wig="wig3">Bob Cut</button>
+                    <button class="wig-button" data-wig="wig4">Wavy</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="wig-size">Size:</label>
+                    <input type="range" id="wig-size" min="50" max="150" value="100">
+                </div>
+                <div class="control-group">
+                    <label for="wig-position-y">Position (Up/Down):</label>
+                    <input type="range" id="wig-position-y" min="-100" max="100" value="0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
